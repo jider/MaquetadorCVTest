@@ -1,0 +1,31 @@
+.social-icon, .header-social-icon {
+  font-size: 24px; }
+  .social-icon [class^="icon-"], .header-social-icon [class^="icon-"] {
+    color: #fff; }
+    .social-icon [class^="icon-"]:hover, .header-social-icon [class^="icon-"]:hover {
+      color: #43515b; }
+
+.header-main-container {
+  height: 60px;
+  width: 100%;
+  background-color: #5ea7db; }
+
+.header-logo {
+  margin-left: 20px;
+  font-size: 26px;
+  color: #fff;
+  line-height: 60px; }
+  .header-logo > img {
+    margin-top: 15px;
+    height: 50%; }
+
+.header-social {
+  display: inline-block;
+  position: absolute;
+  right: 20px; }
+
+.header-social-icon {
+  display: inline-block;
+  line-height: 60px; }
+
+/*# sourceMappingURL=_header.css.map */

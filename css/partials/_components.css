@@ -1,0 +1,8 @@
+.social-icon {
+  font-size: 24px; }
+  .social-icon [class^="icon-"] {
+    color: #fff; }
+    .social-icon [class^="icon-"]:hover {
+      color: #43515b; }
+
+/*# sourceMappingURL=_components.css.map */

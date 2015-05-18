@@ -1,0 +1,112 @@
+@import "base";
+
+// Variables
+$header-section-height: 150px;
+$gallery-bullets-normal: 40px;
+$gallery-image-normal-width: 604px;
+$gallery-image-normal-height: 340px;
+
+
+
+body { background-color: $dark-grey; }
+
+
+
+.header-section {	
+	height: $header-section-height;
+	background-image: url(../img/GH.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat:  no-repeat;
+}
+	.header-section-menu-icon {
+		margin-left: 40px;
+		font-size: $font-icon-size-large;
+		color: $font-color-light;
+		line-height: $header-section-height;
+
+		&:hover {
+			color: $brand-color-tl5;
+		}
+	}
+
+
+.gallery-horizontal-scroll {
+	position: relative;
+	width: 100%;
+}
+
+
+.gallery-nav {
+	  position: absolute;
+	  top: $gallery-image-normal-height / 2;
+	  width: 100%;
+	  height: 50px;
+	  margin-top: -25px;
+	  z-index: 1;
+
+	.gallery-nav-button {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background-color: $brand-color-tl5;
+		background-image: url(../img/arrow.png);
+		background-repeat: no-repeat;
+		background-size: 75%;
+		background-position: center;
+		opacity: 0.5;
+		@include border-radius(25px);
+		cursor: pointer;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.gallery-nav-button--left {
+		left: 5px;
+		@include flip-horizontal();
+	}
+	.gallery-nav-button--right {
+		right: 5px;
+	}
+}
+
+.gallery-content {
+	overflow: hidden;
+}
+	.gallery-content-normal {	height: $gallery-image-normal-height; }
+
+	.gallery-image-wrapper {
+		position: relative;
+		width: $gallery-image-normal-width * 3;
+		height: 100%;		
+
+		.gallery-image { 
+			float: left;
+		}
+	}	
+
+
+
+
+.gallery-bullets {
+	width: 100%;
+	height: $gallery-bullets-normal;
+	line-height: $gallery-bullets-normal;
+	text-align: center;
+	background-color: #fff;
+
+	.bullet {
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		background-color: $light-grey;
+		cursor: pointer;
+		@include border-radius(15px);
+	}
+
+	.bullet:hover, .bullet-active {	background-color: $brand-color-tl5;	}
+}
+
+	.gallery-bullets--bottom { bottom: 0; }

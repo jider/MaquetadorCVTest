@@ -1,0 +1,13 @@
+@import "base";
+
+.social-icon {
+	font-size: $font-icon-size-normal;
+
+	[class^="icon-"] {
+		color: $icon-color-light;
+
+		&:hover {
+			color: $icon-color-dark;
+		}
+	}
+}

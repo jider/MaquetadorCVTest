@@ -1,0 +1,33 @@
+@import "base";
+@import "components";
+
+// Variables
+$header-height: 60px;
+
+.header-main-container {
+	height: $header-height;
+	width: 100%;
+	background-color: $brand-color-tl5;
+}
+	.header-logo {
+		margin-left: 20px;
+		font-size: $font-size-large;
+		color: $font-color-light;
+		line-height: $header-height;
+
+		> img {
+			margin-top: $header-height / 4;
+			height: 50%;
+		}
+	}
+	.header-social {
+		display: inline-block;
+		position: absolute;
+		right: 20px;		
+	}
+		.header-social-icon {
+			@extend .social-icon;
+
+			display: inline-block;						
+			line-height: $header-height;			
+		}

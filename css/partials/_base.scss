@@ -1,0 +1,35 @@
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Font size
+$font-size-large: 26px;
+
+// Font icon size
+$font-icon-size-large: 48px;
+$font-icon-size-normal: 24px;
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+// Font color
+$font-color-light: #fff;
+
+// Color
+$dark-grey: #212121;
+$light-grey: #b8b8b8;
+
+// Brand Color
+$brand-color-tl5: #5ea7db;
+
+// Icon color
+$icon-color-light: $font-color-light;
+$icon-color-dark: #43515b;
+
+
+// Mixins
+@import "mixins";
